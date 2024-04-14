@@ -22,7 +22,7 @@ export const routes: Routes = [
     {
         path: "miguel",
         component: MiguelComponent
-    }
+    },
 
      {
         path: 'Cristel',
