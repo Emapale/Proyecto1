@@ -1,0 +1,22 @@
+<p>Mi nombre es {{nombre}} </p>
+<p>Mi edad es {{ edad}} </p>
+<br>
+<p>Datos persona {{persona.Nombre}}</p>
+<p>Datos persona {{persona.Edad}}</p>
+
+<Label>Cambiando mi nombre</Label>
+<input type="text"[(ngModel)]="nombre">
+<button (click)="cambiandoEdad()">Enviar</button>
+<br>
+<p>Mi nuevo nombre es {{nombre}}</p>
+
+@if(edad > 40){
+    <h3>Es cuarenton</h3>
+}@else{
+    <h3>Senior</h3>
+}
+<li>
+@for (frut of frutas; track frut) {
+    <ul>{{frut}}</ul>
+}
+</li>
